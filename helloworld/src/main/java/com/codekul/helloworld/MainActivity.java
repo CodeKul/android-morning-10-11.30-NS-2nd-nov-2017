@@ -2,6 +2,8 @@ package com.codekul.helloworld;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -10,6 +12,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        int mp3 = R.raw.my;
+
+    }
+
+    public void onPlane(View view) {
+
+        ImageView img = findViewById(R.id.imageView);
+        img.setImageResource(R.drawable.html5);
+    }
+
+    public void onBus(View view) {
+
+        ImageView img = findViewById(R.id.imageView);
+        img.setImageResource(R.drawable.ic_logo);
     }
 }
