@@ -2,7 +2,8 @@ package com.codekul.androidnsnov101130
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import com.codekul.androlib.Setup
+import android.view.View
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -10,7 +11,14 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val stp : Setup = Setup()
-        stp.apkSetup()
+        val vw = View(this)
+    }
+
+    fun onBus(view: View?) {
+        imageView.setImageResource(R.drawable.ic_logo)
+    }
+
+    fun onPlane(view: View?) {
+        imageView.setImageResource(R.drawable.html5)
     }
 }
