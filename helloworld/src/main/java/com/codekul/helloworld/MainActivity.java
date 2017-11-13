@@ -16,13 +16,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void onPlane(View view) {
 
-        ImageView img = findViewById(R.id.imageView);
-        img.setImageResource(R.drawable.html5);
+       /* ImageView img = findViewById(R.id.imageView);
+        img.setImageResource(R.drawable.html5);*/
     }
 
     public void onBus(View view) {
 
-        ImageView img = findViewById(R.id.imageView);
-        img.setImageResource(R.drawable.ic_logo);
+        /*ImageView img = findViewById(R.id.imageView);
+        img.setImageResource(R.drawable.ic_logo);*/
     }
 }

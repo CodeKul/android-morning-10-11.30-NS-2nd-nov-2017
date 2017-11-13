@@ -6,6 +6,8 @@
       <module fileurl="file://$PROJECT_DIR$/androlib/androlib.iml" filepath="$PROJECT_DIR$/androlib/androlib.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/helloworld/helloworld.iml" filepath="$PROJECT_DIR$/helloworld/helloworld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/layouts/layouts.iml" filepath="$PROJECT_DIR$/layouts/layouts.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wascreen/wascreen.iml" filepath="$PROJECT_DIR$/wascreen/wascreen.iml" />
     </modules>
   </component>
 </project>
