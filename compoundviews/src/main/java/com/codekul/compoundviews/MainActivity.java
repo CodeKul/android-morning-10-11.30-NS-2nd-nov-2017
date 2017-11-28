@@ -27,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
 
         LinearLayout containerLl = findViewById(R.id.containerLl);
         View vw = inflater.inflate(R.layout.compound_view, containerLl, true);
+        //containerLl.addView(vw);
+        
         vw.findViewById(R.id.imgVw).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

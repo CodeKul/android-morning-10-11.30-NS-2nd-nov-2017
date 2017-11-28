@@ -1,1 +1,1 @@
-include ':app', ':helloworld', ':androlib', ':wascreen', ':layouts', ':interactivitycommunication', ':viewanimations', ':compoundviews'
+include ':app', ':helloworld', ':androlib', ':wascreen', ':layouts', ':interactivitycommunication', ':viewanimations', ':compoundviews', ':customview', ':adapterviews'
