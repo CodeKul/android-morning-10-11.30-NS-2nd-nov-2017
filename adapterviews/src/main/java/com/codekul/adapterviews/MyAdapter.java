@@ -43,11 +43,15 @@ public class MyAdapter extends BaseAdapter {
     }
 
     @Override
-    public View getView(int pos, View view, ViewGroup viewGroup) {
+    public View getView(int pos, View convertView, ViewGroup viewGroup) {
 
-        View infVw = inflater.inflate(R.layout.grid_item, viewGroup, false);
-        ((ImageView)infVw.findViewById(R.id.img)).setImageResource(dataSet.get(pos).img);
-        ((TextView)infVw.findViewById(R.id.txt)).setText(dataSet.get(pos).txt);
+        View infVw = null;
+        if (convertView == null)
+            infVw = inflater.inflate(R.layout.grid_item, viewGroup, false);
+        else infVw = convertView;
+
+        ((ImageView) infVw.findViewById(R.id.img)).setImageResource(dataSet.get(pos).img);
+        ((TextView) infVw.findViewById(R.id.txt)).setText(dataSet.get(pos).txt);
 
         return infVw;
     }
