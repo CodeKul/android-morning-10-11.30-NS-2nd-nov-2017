@@ -2,7 +2,11 @@ package com.codekul.activitylifecycle;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -12,6 +16,10 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mt("onCreate");
+    }
+
+    public void onBtn(View view) {
+        ((TextView) findViewById(R.id.txtDt)).setText(new Date().toString());
     }
 
     @Override
@@ -43,6 +51,24 @@ public class MainActivity extends AppCompatActivity {
         super.onRestart();
 
         mt("onRestart");
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+
+        mt("onSaveInstanceState");
+        outState.putString("myStr", ((TextView) findViewById(R.id.txtDt)).getText().toString());
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+
+        mt("onRestoreInstanceState");
+
+        String dt = savedInstanceState.getString("myStr");
+        ((TextView) findViewById(R.id.txtDt)).setText(dt);
     }
 
     @Override
