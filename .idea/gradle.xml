@@ -13,10 +13,12 @@
             <option value="$PROJECT_DIR$/androlib" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/compoundviews" />
+            <option value="$PROJECT_DIR$/configchanges" />
             <option value="$PROJECT_DIR$/customview" />
             <option value="$PROJECT_DIR$/helloworld" />
             <option value="$PROJECT_DIR$/interactivitycommunication" />
             <option value="$PROJECT_DIR$/layouts" />
+            <option value="$PROJECT_DIR$/resources" />
             <option value="$PROJECT_DIR$/viewanimations" />
             <option value="$PROJECT_DIR$/wascreen" />
           </set>
